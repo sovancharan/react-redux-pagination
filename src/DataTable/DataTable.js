@@ -5,7 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const DataTable = () => {
+const DataTable = ({ props }) => {
+//     console.log(props);
     const value = useSelector((state) => state.paginationReducer.data);
     console.log('value', value);
     return (
